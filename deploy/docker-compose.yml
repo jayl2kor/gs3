@@ -1,0 +1,52 @@
+# Optional local environment with a real S3 server (MinIO).
+#
+#   minio   – S3-compatible server
+#   awsref  – AWS CLI 1.31.13, the behaviour gs3 is compared against
+#
+# The day-to-day tests do NOT need this file: `make compat` and `go test` use
+# the in-memory server in internal/s3fake. This is for runs against a real
+# server implementation.
+#
+# The default MinIO image below is the one the sibling repositories pin, but
+# it can no longer be pulled from Docker Hub. Point GS3_MINIO_IMAGE at an
+# image your registry provides.
+#
+# Credentials below are throwaway values for the local MinIO only.
+name: gs3
+
+services:
+  minio:
+    image: ${GS3_MINIO_IMAGE:-minio/minio:RELEASE.2025-04-22T22-12-26Z}
+    command: server /data --address ":9000" --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: gs3test
+      MINIO_ROOT_PASSWORD: gs3testsecret
+      MINIO_REGION: us-east-1
+    ports:
+      - "127.0.0.1:19000:9000"
+      - "127.0.0.1:19001:9001"
+    tmpfs:
+      - /data
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:9000/minio/health/ready"]
+      interval: 2s
+      timeout: 2s
+      retries: 30
+
+  awsref:
+    build: ./awscli-ref
+    image: gs3-awscli-ref:1.31.13
+    # Kept alive so tests can `docker compose exec` into it instead of paying
+    # container start-up for every command.
+    entrypoint: ["sleep", "infinity"]
+    environment:
+      AWS_ACCESS_KEY_ID: gs3test
+      AWS_SECRET_ACCESS_KEY: gs3testsecret
+      AWS_DEFAULT_REGION: us-east-1
+      AWS_ENDPOINT_URL: http://minio:9000
+    volumes:
+      - ${GS3_COMPAT_WORKDIR:-/tmp/gs3-compat}:/work
+    working_dir: /work
+    depends_on:
+      minio:
+        condition: service_healthy

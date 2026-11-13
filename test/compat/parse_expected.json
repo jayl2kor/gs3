@@ -1,0 +1,7077 @@
+[
+ {
+  "argv": [
+   "s3",
+   "ls"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "s3://b/p/",
+   "--recursive"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b/p/",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--recursive",
+   "s3://b/p/"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b/p/",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--recursive",
+   "--human-readable",
+   "--summarize",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "human_readable": true,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": true
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--page-size",
+   "10",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": "10",
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--page-size=10",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": "10",
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--request-payer",
+   "s3://b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --request-payer: Invalid choice, valid choices are:\n\nrequester                               ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--request-payer",
+   "requester",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": "requester",
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "s3://b",
+   "--request-payer"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": "requester",
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--request-payer=requester",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": "requester",
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--human",
+   "--summ",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": true,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": true
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--recur",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--r",
+   "x",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": "x",
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--re",
+   "x",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": "x",
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--rec",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--no",
+   "s3://b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "ambiguous option: --no could match --no-verify-ssl, --no-paginate, --no-sign-request",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--no-p",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": false,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--no-v",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": false
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--e",
+   "http://h",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": "http://h",
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--d",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": true,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--q",
+   "x",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": "x",
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--o",
+   "json",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": "json",
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--o",
+   "yaml",
+   "s3://b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --output: Invalid choice, valid choices are:\n\njson                                     | text                                    \ntable                                   ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--c",
+   "s3://b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "ambiguous option: --c could match --color, --ca-bundle, --cli-read-timeout, --cli-connect-timeout",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--co",
+   "on",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "on",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--color",
+   "blue",
+   "s3://b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --color: Invalid choice, valid choices are:\n\non                                       | off                                     \nauto                                    ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--p",
+   "prof",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": "prof",
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--pa",
+   "5",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": "5",
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--bogus",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "--bogus"
+   ],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "s3://b",
+   "extra"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "extra"
+   ],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "-x",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "-x"
+   ],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "-1"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "-1",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--",
+   "--recursive"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--recursive=yes",
+   "s3://b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --recursive: ignored explicit argument 'yes'",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--page-size"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --page-size: expected one argument",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--page-size",
+   "--recursive"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --page-size: expected one argument",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "",
+   "--recursive"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "a b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "a b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--a b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "--a b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "--endpoint-url",
+   "http://h",
+   "ls",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": "http://h",
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "--endpoint-url=http://h",
+   "ls",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": "http://h",
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "s3://b",
+   "--endpoint-url",
+   "http://h",
+   "--no-verify-ssl",
+   "--debug"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": true,
+    "endpoint_url": "http://h",
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": false
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--region",
+   "kr-standard",
+   "--profile",
+   "p",
+   "--no-sign-request",
+   "--ca-bundle",
+   "/x",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": "/x",
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": "p",
+    "query": null,
+    "read_timeout": null,
+    "region": "kr-standard",
+    "sign_request": false,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--cli-read-timeout",
+   "300",
+   "--cli-connect-timeout",
+   "5",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": "5",
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": "300",
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--cli-read",
+   "300",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": "300",
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--cli",
+   "300",
+   "s3://b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "ambiguous option: --cli could match --cli-read-timeout, --cli-connect-timeout",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--no-paginate",
+   "--output",
+   "text",
+   "--query",
+   "a.b",
+   "--color",
+   "off",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "off",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": "text",
+    "paginate": false,
+    "profile": null,
+    "query": "a.b",
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "--recursive",
+   "ls",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "human_readable": false,
+    "page_size": null,
+    "paths": "s3://b",
+    "request_payer": null,
+    "summarize": false
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "ls"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "s3://b/k"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/k"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "the following arguments are required: paths",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "the following arguments are required: paths",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "c"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "c"
+   ],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--recursive"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": true,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "--recursive",
+   "a",
+   "b"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": true,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "--recursive",
+   "b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "the following arguments are required: paths",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "--recursive",
+   "a",
+   "--dryrun",
+   "b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "the following arguments are required: paths",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--exclude",
+   "*",
+   "--include",
+   "*.txt"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": [
+     [
+      "--exclude",
+      "*"
+     ],
+     [
+      "--include",
+      "*.txt"
+     ]
+    ],
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--include",
+   "x",
+   "--exclude",
+   "y",
+   "--include",
+   "z"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": [
+     [
+      "--include",
+      "x"
+     ],
+     [
+      "--exclude",
+      "y"
+     ],
+     [
+      "--include",
+      "z"
+     ]
+    ],
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--exclude=*.tmp",
+   "--inc",
+   "keep*"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": [
+     [
+      "--exclude",
+      "*.tmp"
+     ],
+     [
+      "--include",
+      "keep*"
+     ]
+    ],
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--exc",
+   "p",
+   "--inc",
+   "q"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": [
+     [
+      "--exclude",
+      "p"
+     ],
+     [
+      "--include",
+      "q"
+     ]
+    ],
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--ex",
+   "p"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "ambiguous option: --ex could match --exclude, --expires, --expected-size",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--exclude"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --exclude: expected 1 argument",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--exclude",
+   "--recursive"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --exclude: expected 1 argument",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "--exclude",
+   "x",
+   "a",
+   "b"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": [
+     [
+      "--exclude",
+      "x"
+     ]
+    ],
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--sse"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": "AES256",
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--sse",
+   "aws:kms"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": "aws:kms",
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--sse",
+   "bogus"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --sse: Invalid choice, valid choices are:\n\nAES256                                   | aws:kms                                 ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "--sse",
+   "a",
+   "b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --sse: Invalid choice, valid choices are:\n\nAES256                                   | aws:kms                                 ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "--sse",
+   "--recursive",
+   "a",
+   "b"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": true,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": "AES256",
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--sse=AES256",
+   "--sse-kms-key-id",
+   "kid"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": "AES256",
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": "kid",
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--sse-c",
+   "--sse-c-key",
+   "k"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": "AES256",
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": "k",
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--sse-c-copy-source",
+   "AES256",
+   "--sse-c-copy-source-key",
+   "k2"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": "AES256",
+    "sse_c_copy_source_key": "k2",
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--acl",
+   "public-read"
+  ],
+  "ok": {
+   "args": {
+    "acl": "public-read",
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--acl",
+   "public"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --acl: Invalid choice, valid choices are:\n\nprivate                                  | public-read                             \npublic-read-write                        | authenticated-read                      \naws-exec-read                            | bucket-owner-read                       \nbucket-owner-full-control                | log-delivery-write                      ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--acl",
+   "bogus"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --acl: Invalid choice, valid choices are:\n\nprivate                                  | public-read                             \npublic-read-write                        | authenticated-read                      \naws-exec-read                            | bucket-owner-read                       \nbucket-owner-full-control                | log-delivery-write                      ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--acl"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --acl: expected one argument",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--storage-class",
+   "STANDARD_IA"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": "STANDARD_IA",
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--storage-class",
+   "standard"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --storage-class: Invalid choice, valid choices are:\n\nSTANDARD                                 | REDUCED_REDUNDANCY                      \nSTANDARD_IA                              | ONEZONE_IA                              \nINTELLIGENT_TIERING                      | GLACIER                                 \nDEEP_ARCHIVE                             | GLACIER_IR                              ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--storage-class",
+   "GLACIER_I"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --storage-class: Invalid choice, valid choices are:\n\nSTANDARD                                 | REDUCED_REDUNDANCY                      \nSTANDARD_IA                              | ONEZONE_IA                              \nINTELLIGENT_TIERING                      | GLACIER                                 \nDEEP_ARCHIVE                             | GLACIER_IR                              \n\n\nInvalid choice: 'GLACIER_I', maybe you meant:\n\n  * GLACIER_IR\n  * GLACIER",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--grants",
+   "read=uri=http://x",
+   "full=id=abc"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": [
+     "read=uri=http://x",
+     "full=id=abc"
+    ],
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "--grants",
+   "read=uri=http://x",
+   "a",
+   "b"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "the following arguments are required: paths",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--grants"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --grants: expected at least one argument",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--grants=read=id=1",
+   "full=id=2"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": [
+     "read=id=1"
+    ],
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "full=id=2"
+   ],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--grants",
+   "read=id=1",
+   "--recursive"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": true,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": [
+     "read=id=1"
+    ],
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--metadata",
+   "k=v,k2=v2",
+   "--metadata-directive",
+   "REPLACE"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": "k=v,k2=v2",
+    "metadata_directive": "REPLACE",
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--metadata-directive",
+   "replace"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --metadata-directive: Invalid choice, valid choices are:\n\nCOPY                                     | REPLACE                                 ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--content-type",
+   "text/plain",
+   "--cache-control",
+   "max-age=60",
+   "--content-disposition",
+   "inline",
+   "--content-encoding",
+   "gzip",
+   "--content-language",
+   "en",
+   "--expires",
+   "2030-01-01T00:00:00Z"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": "max-age=60",
+    "content_disposition": "inline",
+    "content_encoding": "gzip",
+    "content_language": "en",
+    "content_type": "text/plain",
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": "2030-01-01T00:00:00Z",
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--website-redirect",
+   "/x",
+   "--source-region",
+   "us-west-2"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": "us-west-2",
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": "/x"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--follow-symlinks"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--no-follow-symlinks"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": false,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--no-follow-symlinks",
+   "--follow-symlinks"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--follow-symlinks",
+   "--no-follow-symlinks"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": false,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--no-guess-mime-type",
+   "--no-progress",
+   "--only-show-errors",
+   "--quiet",
+   "--dryrun"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": true,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": false,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": true,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": false,
+    "quiet": true,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--no-pr"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": false,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--no-g"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": false,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--no-f"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": false,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--ignore-glacier-warnings",
+   "--force-glacier-transfer"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": true,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": true,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--expected-size",
+   "1234",
+   "--page-size",
+   "100"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": "1234",
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": "100",
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "-",
+   "s3://b/k"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "-",
+     "s3://b/k"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "s3://b/k",
+   "-"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "s3://b/k",
+     "-"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--dry"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": true,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--con",
+   "x"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "ambiguous option: --con could match --content-type, --content-disposition, --content-encoding, --content-language",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--content-t",
+   "x"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": "x",
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--s",
+   "x"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "ambiguous option: --s could match --sse, --sse-c, --sse-c-key, --sse-kms-key-id, --sse-c-copy-source, --sse-c-copy-source-key, --storage-class, --source-region",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--size-only"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "--size-only"
+   ],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--delete"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "--delete"
+   ],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--exclude",
+   "a b",
+   "--include",
+   "-x"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --include: expected 1 argument",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--exclude",
+   "-"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": [
+     [
+      "--exclude",
+      "-"
+     ]
+    ],
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--exclude",
+   "-1"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": [
+     [
+      "--exclude",
+      "-1"
+     ]
+    ],
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "--",
+   "a",
+   "b"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "--",
+   "b"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--",
+   "--recursive"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "--recursive"
+   ],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "mv",
+   "a",
+   "s3://b/k",
+   "--recursive"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": true,
+    "dryrun": false,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/k"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "mv"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "mv",
+   "a",
+   "s3://b/k",
+   "--expected-size",
+   "5"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/k"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "--expected-size",
+    "5"
+   ],
+   "subcommand": "mv"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "mv",
+   "s3://b/a",
+   "s3://b/c",
+   "--metadata",
+   "{\"a\":\"b\"}"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": "{\"a\":\"b\"}",
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "s3://b/a",
+     "s3://b/c"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "mv"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "a",
+   "s3://b/p"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": false,
+    "dryrun": false,
+    "exact_timestamps": false,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/p"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": false,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "a",
+   "s3://b/p",
+   "--delete",
+   "--size-only",
+   "--exact-timestamps"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": true,
+    "dryrun": false,
+    "exact_timestamps": true,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/p"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": true,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "a",
+   "s3://b/p",
+   "--exa"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": false,
+    "dryrun": false,
+    "exact_timestamps": true,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/p"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": false,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "a",
+   "s3://b/p",
+   "--ex",
+   "x"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "ambiguous option: --ex could match --exclude, --expires, --exact-timestamps",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "a",
+   "s3://b/p",
+   "--de"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": false,
+    "dryrun": false,
+    "exact_timestamps": false,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/p"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": false,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": true,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "a",
+   "s3://b/p",
+   "--d"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": false,
+    "dryrun": false,
+    "exact_timestamps": false,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/p"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": false,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": true,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "a",
+   "s3://b/p",
+   "--siz"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": false,
+    "dryrun": false,
+    "exact_timestamps": false,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/p"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": true,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "a",
+   "s3://b/p",
+   "--recursive"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": false,
+    "dryrun": false,
+    "exact_timestamps": false,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/p"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": false,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "--recursive"
+   ],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "a",
+   "s3://b/p",
+   "--exclude",
+   "images*",
+   "--exclude",
+   "LiDAR*",
+   "--only-show-errors"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": false,
+    "dryrun": false,
+    "exact_timestamps": false,
+    "expires": null,
+    "filters": [
+     [
+      "--exclude",
+      "images*"
+     ],
+     [
+      "--exclude",
+      "LiDAR*"
+     ]
+    ],
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": true,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b/p"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": false,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "--only-show-errors",
+   "--exclude",
+   "*",
+   "--include",
+   "db_*.h5",
+   "s3://b/p",
+   "d",
+   "--cli-read-timeout",
+   "300"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": false,
+    "dryrun": false,
+    "exact_timestamps": false,
+    "expires": null,
+    "filters": [
+     [
+      "--exclude",
+      "*"
+     ],
+     [
+      "--include",
+      "db_*.h5"
+     ]
+    ],
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": true,
+    "page_size": null,
+    "paths": [
+     "s3://b/p",
+     "d"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": false,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": "300",
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "sync",
+   "s3://b/p",
+   "d",
+   "--endpoint-url=http://h:9000",
+   "--delete"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": true,
+    "dryrun": false,
+    "exact_timestamps": false,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "s3://b/p",
+     "d"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": false,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": "http://h:9000",
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "rm",
+   "s3://b/k"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "dryrun": false,
+    "filters": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "s3://b/k"
+    ],
+    "quiet": false,
+    "request_payer": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "rm"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "rm",
+   "s3://b/p",
+   "--recursive",
+   "--only-show-errors"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "dryrun": false,
+    "filters": null,
+    "only_show_errors": true,
+    "page_size": null,
+    "paths": [
+     "s3://b/p"
+    ],
+    "quiet": false,
+    "request_payer": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "rm"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "rm",
+   "--recursive",
+   "--exclude",
+   "*",
+   "--include",
+   "x*",
+   "s3://b/p",
+   "--dryrun",
+   "--debug"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "dryrun": true,
+    "filters": [
+     [
+      "--exclude",
+      "*"
+     ],
+     [
+      "--include",
+      "x*"
+     ]
+    ],
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "s3://b/p"
+    ],
+    "quiet": false,
+    "request_payer": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": true,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "rm"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "rm"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "the following arguments are required: paths",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "rm",
+   "s3://b/k",
+   "s3://b/k2"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "dryrun": false,
+    "filters": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "s3://b/k"
+    ],
+    "quiet": false,
+    "request_payer": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "s3://b/k2"
+   ],
+   "subcommand": "rm"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "rm",
+   "s3://b/k",
+   "--page-size",
+   "7",
+   "--request-payer",
+   "--quiet"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "dryrun": false,
+    "filters": null,
+    "only_show_errors": false,
+    "page_size": "7",
+    "paths": [
+     "s3://b/k"
+    ],
+    "quiet": true,
+    "request_payer": "requester"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "rm"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "rm",
+   "s3://b/k",
+   "--acl",
+   "private"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": false,
+    "dryrun": false,
+    "filters": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "s3://b/k"
+    ],
+    "quiet": false,
+    "request_payer": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "--acl",
+    "private"
+   ],
+   "subcommand": "rm"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "mb",
+   "s3://newbucket"
+  ],
+  "ok": {
+   "args": {
+    "path": "s3://newbucket"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "mb"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "mb"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "the following arguments are required: path",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "mb",
+   "s3://a",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "path": "s3://a"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "s3://b"
+   ],
+   "subcommand": "mb"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "rb",
+   "s3://b",
+   "--force"
+  ],
+  "ok": {
+   "args": {
+    "force": true,
+    "path": "s3://b"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "rb"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "rb",
+   "--force",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "force": true,
+    "path": "s3://b"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "rb"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "rb",
+   "--f",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "force": true,
+    "path": "s3://b"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "rb"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "presign",
+   "s3://b/k"
+  ],
+  "ok": {
+   "args": {
+    "expires_in": 3600,
+    "path": "s3://b/k"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "presign"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "presign",
+   "s3://b/k",
+   "--expires-in",
+   "60"
+  ],
+  "ok": {
+   "args": {
+    "expires_in": "60",
+    "path": "s3://b/k"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "presign"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "presign",
+   "--expires-in=60",
+   "s3://b/k"
+  ],
+  "ok": {
+   "args": {
+    "expires_in": "60",
+    "path": "s3://b/k"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "presign"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "presign",
+   "s3://b/k",
+   "--expires",
+   "60"
+  ],
+  "ok": {
+   "args": {
+    "expires_in": "60",
+    "path": "s3://b/k"
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "presign"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "presign"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "the following arguments are required: path",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "website",
+   "s3://b",
+   "--index-document",
+   "index.html",
+   "--error-document",
+   "error.html"
+  ],
+  "ok": {
+   "args": {
+    "error_document": "error.html",
+    "index_document": "index.html",
+    "paths": [
+     "s3://b"
+    ]
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "website"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "website",
+   "s3://b"
+  ],
+  "ok": {
+   "args": {
+    "error_document": null,
+    "index_document": null,
+    "paths": [
+     "s3://b"
+    ]
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "website"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "website"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "the following arguments are required: paths",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "website",
+   "s3://b",
+   "--index",
+   "i.html",
+   "--error",
+   "e.html"
+  ],
+  "ok": {
+   "args": {
+    "error_document": "e.html",
+    "index_document": "i.html",
+    "paths": [
+     "s3://b"
+    ]
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "website"
+  }
+ },
+ {
+  "argv": [
+   "s3"
+  ],
+  "ok": {
+   "args": null,
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": null
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "bogus"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument subcommand: Invalid choice, valid choices are:\n\nls                                       | website                                 \ncp                                       | mv                                      \nrm                                       | sync                                    \nmb                                       | rb                                      \npresign                                 ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "--bogus"
+  ],
+  "ok": {
+   "args": null,
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [
+    "--bogus"
+   ],
+   "subcommand": null
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "ls",
+   "--version"
+  ],
+  "error": {
+   "exit": 0,
+   "message": "",
+   "stdout": "aws-cli/1.31.13 Python/3.11.18 Linux/7.0.14-linuxkit botocore/1.33.13\n"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--profile"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --profile: expected one argument",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--region=",
+   "--profile="
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": "",
+    "query": null,
+    "read_timeout": null,
+    "region": "",
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--exclude="
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": [
+     [
+      "--exclude",
+      ""
+     ]
+    ],
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--sse="
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --sse: Invalid choice, valid choices are:\n\nAES256                                   | aws:kms                                 ",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "s3",
+   "cp",
+   "a",
+   "b",
+   "--endpoint-url",
+   "--recursive"
+  ],
+  "error": {
+   "exit": 2,
+   "message": "argument --endpoint-url: expected one argument",
+   "stdout": ""
+  }
+ },
+ {
+  "argv": [
+   "--endpoint-url",
+   "http://h",
+   "s3",
+   "cp",
+   "a",
+   "b"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "dir_op": false,
+    "dryrun": false,
+    "expected_size": null,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": "http://h",
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "cp"
+  }
+ },
+ {
+  "argv": [
+   "--debug",
+   "--region",
+   "r",
+   "s3",
+   "sync",
+   "a",
+   "s3://b",
+   "--delete"
+  ],
+  "ok": {
+   "args": {
+    "acl": null,
+    "cache_control": null,
+    "content_disposition": null,
+    "content_encoding": null,
+    "content_language": null,
+    "content_type": null,
+    "delete": true,
+    "dryrun": false,
+    "exact_timestamps": false,
+    "expires": null,
+    "filters": null,
+    "follow_symlinks": true,
+    "force_glacier_transfer": false,
+    "grants": null,
+    "guess_mime_type": true,
+    "ignore_glacier_warnings": false,
+    "metadata": null,
+    "metadata_directive": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "a",
+     "s3://b"
+    ],
+    "progress": true,
+    "quiet": false,
+    "request_payer": null,
+    "size_only": false,
+    "source_region": null,
+    "sse": null,
+    "sse_c": null,
+    "sse_c_copy_source": null,
+    "sse_c_copy_source_key": null,
+    "sse_c_key": null,
+    "sse_kms_key_id": null,
+    "storage_class": null,
+    "website_redirect": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": true,
+    "endpoint_url": null,
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": "r",
+    "sign_request": true,
+    "verify_ssl": true
+   },
+   "remaining": [],
+   "subcommand": "sync"
+  }
+ },
+ {
+  "argv": [
+   "--no-verify-ssl",
+   "s3",
+   "--endpoint-url",
+   "http://h",
+   "rm",
+   "--recursive",
+   "s3://b/p"
+  ],
+  "ok": {
+   "args": {
+    "dir_op": true,
+    "dryrun": false,
+    "filters": null,
+    "only_show_errors": false,
+    "page_size": null,
+    "paths": [
+     "s3://b/p"
+    ],
+    "quiet": false,
+    "request_payer": null
+   },
+   "globals": {
+    "ca_bundle": null,
+    "color": "auto",
+    "command": "s3",
+    "connect_timeout": null,
+    "debug": false,
+    "endpoint_url": "http://h",
+    "output": null,
+    "paginate": true,
+    "profile": null,
+    "query": null,
+    "read_timeout": null,
+    "region": null,
+    "sign_request": true,
+    "verify_ssl": false
+   },
+   "remaining": [],
+   "subcommand": "rm"
+  }
+ }
+]

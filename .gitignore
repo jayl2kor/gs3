@@ -1,0 +1,12 @@
+/bin/
+/dist/
+*.test
+*.out
+*.pprof
+/bench/data/
+/bench/results/
+# Cluster-specific job spec (node names, registry, bucket); kept local.
+/bench/k8s/job.yaml
+.env
+.env.*
+.DS_Store
